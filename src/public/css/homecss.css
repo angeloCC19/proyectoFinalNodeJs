@@ -1,0 +1,29 @@
+h1{
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lista li {
+    display: inline-block;
+    margin-right: 20px; 
+  }
+  
+  .lista a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    font-size: 16px; 
+    transition: color 0.3s; 
+  }
+  
+  .lista a:hover {
+    color: #007BFF;
+  }

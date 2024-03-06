@@ -8,23 +8,22 @@
 </head>
 <body>
     <h1>Estás en el registro.</h1>
+    <%- include('partials/navbar') %>
+
 
     <div class="contenedor">
         <h2>Registrarse</h2>
-     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-      </div>
+    <form action="insertUser" method="post">
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Contraseña<a href=""></a></label>
-        <input class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Repetir contraseña<a href=""></a></label>
-        <input class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
-      </div>
+          <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+          <input name="nameUser" type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Contraseña<a href=""></a></label>
+          <input name="password" class="form-control" id="exampleFormControlTextarea1" rows="3"></input>
+        </div>
       <button class="boton">Entrar</button>
   </div>
-
+  </form>
 </body>
 </html>
